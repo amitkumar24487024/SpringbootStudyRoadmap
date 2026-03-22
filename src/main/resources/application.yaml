@@ -1,3 +1,14 @@
 spring:
   application:
     name: SpringBootStudyRoadmap
+
+  datasource:
+    url: jdbc:mysql://34.93.242.179:3306/springroadmap?useSSL=false&serverTimezone=UTC
+    username: root
+    password: amit2448
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
