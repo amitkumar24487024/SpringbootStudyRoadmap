@@ -1,17 +1,12 @@
 spring:
   application:
     name: SpringBootStudyRoadmap
-
-  datasource:
-    url: jdbc:mysql://34.93.242.179:3306/springroadmap?useSSL=false&serverTimezone=UTC
-    username: root
-    password: amit2448
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+  data:
+    mongodb:
+      uri: mongodb+srv://springamit:Jy4DRjCfkGBUrfJ9@cluster0.zwwdlkd.mongodb.net/?appName=Cluster0
   jpa:
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
-    show-sql: true
+logging:
+  level:
+    org.mongodb.driver: DEBUG
