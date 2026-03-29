@@ -33,6 +33,7 @@ public class UserController {
 
         log.info("Fetching all users");
         List<MyUser> users = userService.getAllUsers();
+        log.info("Number of users fetched: {}", users);
         return ResponseEntity.ok(users);
     }
 }
